@@ -11,7 +11,7 @@ services:
       SERVICE_TAGS: postgres-db
       SERVICE_NAME: booking-db
     volumes:
-       - ./bookingDb:/var/lib/postgresql/data/
+       - bookingDb:/var/lib/postgresql/data/
     ports: 
       - 5434:5432
     networks:
